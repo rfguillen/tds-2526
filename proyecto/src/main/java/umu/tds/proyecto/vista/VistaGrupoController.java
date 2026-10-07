@@ -1,0 +1,117 @@
+package umu.tds.proyecto.vista;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.TableColumn;
+import javafx.scene.control.TableView;
+import javafx.scene.control.TextField;
+import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.stage.Stage;
+import umu.tds.proyecto.Configuracion;
+import umu.tds.proyecto.negocio.modelo.Participante;
+
+/**
+ * Controlador de creación de cuentas compartidas
+ * 
+ * Recoge participantes y porcentajes antes de delegar la creación en el
+ * controlador principal
+ */
+public class VistaGrupoController {
+
+    @FXML
+    private TableColumn<Participante, String> columnaNombreParticipante;
+
+    @FXML
+    private TableColumn<Participante, Double> columnaPorcentaje;
+
+    @FXML
+    private TableView<Participante> tablaParticipantes;
+
+    @FXML
+    private TextField textoNombreGrupo;
+
+    @FXML
+    private TextField textoNombreParticipante;
+
+    @FXML
+    private TextField textoPorcentaje;
+    
+    private ObservableList<Participante> listaParticipantes;
+    
+    @FXML
+    public void initialize() {
+    	columnaNombreParticipante.setCellValueFactory(new PropertyValueFactory<>("nombre"));
+    	columnaPorcentaje.setCellValueFactory(new PropertyValueFactory<>("porcentajeParticipacion"));
+    	
+    	// Inicializar la lista vacia
+    	listaParticipantes = FXCollections.observableArrayList();
+    	tablaParticipantes.setItems(listaParticipantes);
+    }
+
+    @FXML
+    void actionAnadirParticipante(ActionEvent event) {
+    	String nombre = textoNombreParticipante.getText();
+    	String porcentajePart = textoPorcentaje.getText();
+    	
+    	//Para comprobar que no exista un participante con el mismo nombre
+    	boolean existe = listaParticipantes.stream()
+    			.anyMatch(p->p.getNombre().equalsIgnoreCase(nombre.trim()));
+    	if (existe) {
+    		System.out.println("Ya existe un participante con el nombre '" + nombre + "'");
+    		return;
+    	}
+    	
+    	if (!nombre.isEmpty()) {
+    		double porcentaje = 0.0;
+    		try {
+    			if (!porcentajePart.isEmpty()) {
+    				porcentaje = Double.parseDouble(porcentajePart);
+    			}
+    		} catch (NumberFormatException e) {}
+    		
+    		Participante p = new Participante(nombre, porcentaje);
+    		listaParticipantes.add(p);
+    		
+    		// Limpiar los campos
+    		textoNombreParticipante.clear();
+    		textoPorcentaje.clear();
+    		
+    	}
+    }
+
+    @FXML
+    void actionCancelar(ActionEvent event) {
+    	cerrarVentana();
+    }
+
+    @FXML
+    void actionCrearGrupo(ActionEvent event) {
+    	String nombreGrupo = textoNombreGrupo.getText();
+    	
+    	if (nombreGrupo.isEmpty() || listaParticipantes.isEmpty()) {
+    		System.out.println("Faltan datos");
+    		return;
+    	}
+    	
+    	try {
+    		List<Participante> participantes = new ArrayList<>(listaParticipantes);
+    		Configuracion.getInstancia().getControladorGastos().crearCuentaCompartida(nombreGrupo, participantes);
+    		System.out.println("Grupo " + nombreGrupo + " creado correctamente");
+    		
+    		cerrarVentana();
+    		
+    	} catch (Exception e) {
+    		System.out.println("Error al crear grupo: " + e.getMessage());
+    	}
+    }
+    
+    private void cerrarVentana() {
+    	Stage stage = (Stage) textoNombreGrupo.getScene().getWindow();
+    	stage.close();
+    }
+}

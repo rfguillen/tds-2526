@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d7f150aa-86ee-44b3-887b-05cec9656fe6" name="Changes" comment="Persistencia">
+      <change afterPath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/adapters/repository/IRepositorioCategorias.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/adapters/repository/IRepositorioUsuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/adapters/repository/RepositorioCategorias.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/adapters/repository/RepositorioCategorias.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/adapters/repository/RepositorioUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/adapters/repository/RepositorioUsuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/adapters/repository/json/JsonRepositorioUsuarios.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/adapters/repository/json/JsonRepositorioUsuarios.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/negocio/controladores/GestionGastos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/umu/tds/proyecto/negocio/controladores/GestionGastos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/Configuracion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/ConfiguracionImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/adapters/repository/RepositorioCategorias.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/adapters/repository/RepositorioUsuarios.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/controladores/GestionGastos.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/controladores/GestionGastos.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/modelo/Alerta$Periodo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/modelo/Alerta.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/modelo/CuentaCompartida.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/modelo/EstrategiaAlertaSemanal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/modelo/FiltroMovimientos.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/modelo/GastoCompartido.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/modelo/ManejadorExcepciones.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/negocio/modelo/Notificacion.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/EstadisticasController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/SceneManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VentanaPrincipalController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VentanaPrincipalController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VistaAlertaController$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VistaAlertaController$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VistaAlertaController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VistaGastoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VistaGestionAlertasController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VistaGrupoController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VistaImportadorController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/umu/tds/proyecto/vista/VistaTerminal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AndresMartinezUmuVersion&quot;
+  }
+}</component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="bb802b23-c50b-498a-a748-5c58dea37e37" />
+  </component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/rfguillen/proyecto-tds.git&quot;,
+    &quot;accountId&quot;: &quot;bb802b23-c50b-498a-a748-5c58dea37e37&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3Cr9GSTEiO48W2f52L9oYk9qs6i" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;ConvocatoriaMayo&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;
+  }
+}</component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.31033.145" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d7f150aa-86ee-44b3-887b-05cec9656fe6" name="Changes" comment="" />
+      <created>1777132725601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777132725601</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Persistencia">
+      <option name="closed" value="true" />
+      <created>1778065692531</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1778065692531</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Persistencia" />
+    <option name="LAST_COMMIT_MESSAGE" value="Persistencia" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/module-info.java</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
